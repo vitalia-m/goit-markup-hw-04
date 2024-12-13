@@ -50,7 +50,7 @@
   position: relative;
 }
 .nav-link.current::after {
-  content: ' ';
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -113,6 +113,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .title-one {
@@ -151,7 +152,7 @@ body {
   border-radius: 4px;
   display: block;
   min-width: 169px;
-  transition: color 250mc cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-button:hover,
 .order-button:focus {
@@ -223,6 +224,7 @@ body {
   width: 100%;
   max-width: 264px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 .team-name {
   font-family: 'Roboto';
@@ -272,10 +274,15 @@ body {
   width: 100%;
   max-width: calc((100% - 48px) / 3);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-repr:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 .img-anime {
   position: relative;
   overflow: hidden;
+
 }
 .overlay {
   position: absolute;
@@ -292,13 +299,14 @@ body {
   transform: translateY(100%);
   transition: transform 0.3s ease;
   opacity: 0;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-repr:hover .overlay,
@@ -332,6 +340,7 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .portfolio-info {
   border-top: none;
   border-right: 1px solid #e7e9fc;
@@ -392,6 +401,8 @@ img {
   min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin: 0 auto;
 }
 .section {
@@ -421,23 +432,29 @@ img {
 .icons-circle {
   background-color: #4d5ae5;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
   margin-top: 8px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-circle:hover {
+.icons-circle:hover ,
+.icons-circle:focus {
   background-color: #404bbf;
 }
 .icons {
   fill: #f4f4fd;
 }
+.icons-li {
+  width:40px;
+  height: 40px;
+}
 .icons-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 .social-links {
@@ -450,8 +467,10 @@ img {
 .footer-social-text {
   font-weight: 500;
   font-size: 16px;
-  color: #f4f4fd;
+  color: white;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
+
 }
 
 .footer-social-list {
@@ -462,10 +481,12 @@ img {
   height: 40px;
   width: 100%;
   justify-content: center;
+
 }
 .footer-social-item {
   width: 40px;
   height: 40px;
+
 }
 
 .footer-icons-circle {
@@ -479,6 +500,10 @@ img {
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icons-circle:hover {
+.footer-icons-circle:hover
+.footer-icons-circle:focus {
   background-color: #31d0aa;
+}
+.footer-web-box {
+  margin-right: 120px;
 }
