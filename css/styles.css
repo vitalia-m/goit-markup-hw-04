@@ -440,7 +440,9 @@ img {
   margin-top: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-circle:hover,
+.icons-circle:hover {
+  background-color: #404bbf;
+}
 .icons-circle:focus {
   background-color: #404bbf;
 }
@@ -496,7 +498,9 @@ img {
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icons-circle:hover,
+.footer-icons-circle:hover {
+  background-color: #31d0aa;
+}
 .footer-icons-circle:focus {
   background-color: #31d0aa;
 }
