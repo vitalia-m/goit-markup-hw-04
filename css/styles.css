@@ -152,7 +152,7 @@ body {
   border-radius: 4px;
   display: block;
   min-width: 169px;
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-button:hover,
 .order-button:focus {
@@ -224,7 +224,8 @@ body {
   width: 100%;
   max-width: 264px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-name {
   font-family: 'Roboto';
@@ -237,7 +238,7 @@ body {
   text-align: center;
 }
 .team-text {
-  padding: 32px 16px 32px 16px;
+  padding: 32px 0;
 }
 .team-position {
   color: #434455;
@@ -277,12 +278,12 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-repr:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .img-anime {
   position: relative;
   overflow: hidden;
-
 }
 .overlay {
   position: absolute;
@@ -306,7 +307,6 @@ body {
   line-height: 150%;
   letter-spacing: 0.02em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .portfolio-repr:hover .overlay,
@@ -355,7 +355,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #f4f4fd;
-  padding: 100px 0 100px 0;
+  padding: 100px 0;
   margin-left: 0;
 }
 .footer .container {
@@ -402,10 +402,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-.container .team {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: baseline;
 }
 .section {
   padding-top: 120px;
@@ -443,7 +440,7 @@ img {
   margin-top: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-circle:hover ,
+.icons-circle:hover,
 .icons-circle:focus {
   background-color: #404bbf;
 }
@@ -451,7 +448,7 @@ img {
   fill: #f4f4fd;
 }
 .icons-li {
-  width:40px;
+  width: 40px;
   height: 40px;
 }
 .icons-list {
@@ -472,7 +469,6 @@ img {
   color: white;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
-
 }
 
 .footer-social-list {
@@ -483,12 +479,10 @@ img {
   height: 40px;
   width: 100%;
   justify-content: center;
-
 }
 .footer-social-item {
   width: 40px;
   height: 40px;
-
 }
 
 .footer-icons-circle {
@@ -502,7 +496,7 @@ img {
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icons-circle:hover
+.footer-icons-circle:hover,
 .footer-icons-circle:focus {
   background-color: #31d0aa;
 }
