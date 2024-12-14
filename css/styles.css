@@ -294,9 +294,8 @@ body {
   background-color: #4d5ae5;
   color: #f4f4fd;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding-top: 40px;
+
   transform: translateY(100%);
   transition: transform 0.3s ease;
   opacity: 0;
